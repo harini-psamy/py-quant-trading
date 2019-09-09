@@ -7,9 +7,9 @@ api.list_positions()
 
 def initialize(context):
     
-    context.sym = symbol('MSFT')
-    context.account_bal = 10000
-    context.units = 10
+    context.sym = symbol(sym)
+    context.account_bal = account-bal
+    context.units = units
     
 def handle_data(context, data):
     stock_data = data.history(context.asset, 'price', bar_count=100, frequency="1s")
